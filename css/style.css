@@ -1,0 +1,154 @@
+:root {
+   --prim: #131d29;
+   --sec: #f2f3f5;
+   --active: #ff8901;
+
+   --font: 'Oswald', sans-serif;
+}
+
+/* 
+    Utility classes
+*/
+
+.prim-font {
+   font-family: var (var(--font));
+}
+.my-btn {
+   background-color: var(--prim);
+   border-radius: 6px;
+   color: white;
+} 
+.my-btn:hover{
+   background-color: var(--active);
+   color: white;
+}
+.bottom-nav {
+   margin-top: 20px;
+}
+.top-nav .nav-item {
+   border-right: solid#6c757d 1px;
+}
+.top-nav .nav-item last-child {
+   border-right: none;
+}
+.top-nav-link {
+   margin-left: 6px;
+
+}
+/* 
+    Global styling
+*/
+
+body {
+   background-color: var(--sec);
+   font-family:  (var(--font));
+   
+      
+}
+
+/* 
+    Header
+ */
+
+.top-header {
+   background-color: var(--prim);
+}
+
+.demo-link {
+   display: inline-block;
+   padding-top: 16px;
+}
+
+/* main */
+
+.sliders {
+   margin: 12px 0;
+}
+.slider { 
+   margin: 0 2px;
+   aspect-ratio: 1 / 1;
+   width: 30px;
+   background-color: #c6d0dc;
+   border-radius: 50%;
+}
+.slider:hover{
+   background-color: var(--active);
+}
+.main-content {
+   border: solid#6c757d 1px;
+   border-bottom: none;
+}
+.main-content:nth-child(2){
+   border-right: solid#6c757d 1px;
+   border-left: solid#6c757d 1px;
+}
+.main-content h2 {
+   margin: 30px 0;
+}
+
+/* footer */
+
+.top-footer {
+   margin-top: 60px;
+   padding-top: 60px;
+   padding-bottom: 60px;
+   background: radial-gradient(circle at 50% -50%, rgba(53, 85, 123, 1) 0%, rgba(20, 32, 46, 1) 50%, rgba(14, 23, 32, 1) 100%);
+}
+
+.services-list {
+   list-style-image: url('/tm/cog.png');
+   padding-left: 16px;
+   margin-top: 20px;
+}
+
+.services-item {
+   line-height: 2;
+}
+
+.opp-list {
+   list-style-image: url('/tm/chat.png');
+   padding-left: 16px;
+   margin-top: 20px;
+}
+
+.date-div {
+   width: 160px;
+   height: 100px;
+   text-align: center;
+   border-radius: 6px;
+}
+
+.news-list {
+   padding: 0;
+}
+
+.news-item {
+   margin-top: 10px;
+}
+
+.date-div {
+   margin-right: 10px;
+}
+
+.news-item:first-child .date-div {
+   background-color: #be8542;
+}
+
+.news-item:nth-child(2) .date-div {
+   background-color: #bc6142;
+}
+
+.news-item:last-child .date-div {
+   background-color: #bd425e;
+}
+
+.news-day {
+   margin-top: 20px;
+   margin-bottom: 0;
+}
+
+.bottom-footer {
+   background-color: #0b1016;
+   min-height: 140px;
+   padding-top: 20px;
+}
